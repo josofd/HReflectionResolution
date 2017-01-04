@@ -1,0 +1,19 @@
+﻿<Window x:Class="HReflectionResolution.DetailView" x:ClassModifier="internal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HReflectionResolution"
+        mc:Ignorable="d" ResizeMode="NoResize" 
+        Title="DetailView" Height="350" Width="800" PreviewKeyDown="Window_PreviewKeyDown"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border Background="#FF8D8D8D" Grid.RowSpan="2"/>
+        <DataGrid Name="DataGridDependencies" AutoGenerateColumns="False" Margin="10" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Name}" Header="Name" Width="*"/>
+                <DataGridTextColumn Binding="{Binding Version}" Header="Version" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
