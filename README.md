@@ -1,4 +1,4 @@
 # HReflectionResolution
 
-Helper for discover .NET assemblies referenced is executable.
+Helper for discover .NET assemblies.
 Generation of manifest file
